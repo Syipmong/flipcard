@@ -142,7 +142,7 @@ function createCards() {
     const card = document.createElement("div");
     card.classList.add("card");
     card.dataset.name = cards[i].name;
-    //card.style.backgroundImage = `url(${cards[i].img})`;
+    card.style.backgroundImage = `url(${cards[i].img})`;
     card.addEventListener("click", flipCard);
     document.querySelector(".container").appendChild(card);
   }
